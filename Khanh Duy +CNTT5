@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class TrungBinhDiem
+{
+    public static void main(String args[])
+    {
+        int marks[] = new int[6];
+        int i,n;
+        boolean flag = true;
+        float total=0, avg;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhap vao so mon hoc can tinh: ");
+        n = scanner.nextInt();
+            for(i=0; i<n; i++) {
+                System.out.print("Nhap vao diem mon thu "+(i+1)+": ");
+                marks[i] = scanner.nextInt();
+                total = total + marks[i];
+            }
+        scanner.close();
+        avg = total/n;
+        System.out.println("Ddiem trung binh la "+ n + " mon hoc tren la: "+avg);
+        System.out.print("Xep loai cua ban la: ");
+        if(avg>=8)
+        {
+            System.out.print("Gioi");
+        }
+        else if(avg>=7 && avg<8)
+        {
+            System.out.print("Kha");
+        }
+        else if(avg>=5 && avg<7)
+        {
+            System.out.print("TB");
+        }
+        else
+        {
+            System.out.print("Kem");
+        }
+        System.out.println();
+        System.out.println("----------------------------");
+        System.out.println("Chương trình này được đăng tại Freetuts.net");
+    }
+}
+
