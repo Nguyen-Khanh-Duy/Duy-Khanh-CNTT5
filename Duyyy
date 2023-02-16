@@ -1,0 +1,14 @@
+import java.util.scanner;
+public class Bai3{
+  public static void main (string[]  args) {
+   scanner sc= new scanner(system.in)
+   double SoDien;
+   system.out.print("So Dien=  ");
+   SoDien=sc.nextDouble();
+   If(SoDien>=50){
+      system.out.println("SoTien" +(SoDien*1000));  }
+      else{
+      system.out.println("SoTien"+((50*1000) +(SoDien-50)*1200));
+      }
+   }
+ }
