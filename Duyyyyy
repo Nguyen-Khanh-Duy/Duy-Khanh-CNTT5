@@ -1,0 +1,28 @@
+public static void mian(String [] args)
+  int n,c,i:
+  scanner scanner=new scanner (system.in);
+  do{
+  system.out.println("nhap vao so pt cua mang:");
+  }While(n<=0)
+  int A[]= neu int[n];
+  system.out.println("nhap cac so pt cho mang:");
+  for(i=0;i<n;i++)
+    system.out.println("nhap pt thu "  + i  + ":");
+    A[] = scanner.newint();
+    system.out.println("nhap so nguen X:");
+    int X= scanner.netint();
+    for(c=i=0;i<n;i++)
+       If (A[]!=X) {
+       A[c]=A[i];
+       c++;
+      }
+    }
+    n=c;
+    system.out.println("Mang con lai sau khi xoa ptu "  +  X   +  "  la :");
+    For(i=0;i<n;i++)
+    {
+    system.out.println("A[i]+  "/t");
+   }
+ }
+  
+  
