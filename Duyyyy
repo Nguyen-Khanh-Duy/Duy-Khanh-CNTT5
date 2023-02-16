@@ -1,0 +1,42 @@
+public class Mainclass{
+ public static void menu() {
+    system.out.println("-------------------------------");
+    system.out.println("----1.Giai PT bac nhat-----");
+    system.out.println("----2.Giai PT bac hai-----");
+    system.out.println("----3.Tinh tien dien-----");
+    system.out.println("----Thoat chuong trinh-----");
+    system.out.println("-------------------------------");
+    scanner s= new scanner(system.in);
+    int chon= s.nextInt();
+    Switch(chon){
+       Case1
+           System.out.print("a:  ")
+           Float a=s.nextFloat();
+           System.out.print("b:  ")
+           Float b=s.nextFloat();
+           PhuongTrinh.GiaiPTBacNhat(a,b);
+           break;
+           
+       Case2 
+           System.out.print("a:  ")
+           Float a=s.nextFloat();
+           System.out.print("b:  ")
+           Float b=s.nextFloat();
+           System.out.print("c:  ")
+           Float c=s.nextFloat();
+           PhuongTrinh.GiaiPTBacHai(a,b,c);
+           
+           break;
+       Case3
+          TienDien.tinhTienDien();
+          break;
+          default;
+            system.exit(0);
+            }
+            system.out.println("Ket Thuc!:");
+            }
+          }
+        }
+           
+           
+          
